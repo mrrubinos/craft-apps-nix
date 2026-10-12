@@ -1,5 +1,5 @@
 {
-  description = "PdfCraft, a PDF workbench written in Rust";
+  description = "PdfCraft, WordCraft, GridCraft and DeckCraft from storytold, built from source";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -19,22 +19,26 @@
         "aarch64-linux"
       ];
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f nixpkgs.legacyPackages.${system});
-      pdfcraftFor =
+      craftApps =
         pkgs:
         let
           rust = nixpkgs-rust.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+          mkCraftApp = pkgs.callPackage ./pkgs/mk-craft-app.nix { };
+          mkCraftAppRust = pkgs.callPackage ./pkgs/mk-craft-app.nix {
+            rustPlatform = pkgs.makeRustPlatform { inherit (rust) rustc cargo; };
+          };
         in
-        pkgs.callPackage ./package.nix {
-          rustPlatform = pkgs.makeRustPlatform { inherit (rust) rustc cargo; };
+        {
+          pdfcraft = pkgs.callPackage ./pkgs/pdfcraft.nix { mkCraftApp = mkCraftAppRust; };
+          wordcraft = pkgs.callPackage ./pkgs/wordcraft.nix { inherit mkCraftApp; };
+          gridcraft = pkgs.callPackage ./pkgs/gridcraft.nix { inherit mkCraftApp; };
+          deckcraft = pkgs.callPackage ./pkgs/deckcraft.nix { inherit mkCraftApp; };
         };
     in
     {
-      packages = forAllSystems (pkgs: {
-        pdfcraft = pdfcraftFor pkgs;
-        default = self.packages.${pkgs.stdenv.hostPlatform.system}.pdfcraft;
-      });
+      packages = forAllSystems craftApps;
 
-      overlays.default = final: _prev: { pdfcraft = pdfcraftFor final; };
+      overlays.default = final: _prev: craftApps final;
 
       formatter = forAllSystems (pkgs: pkgs.nixfmt);
     };

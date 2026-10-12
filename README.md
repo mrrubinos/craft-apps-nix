@@ -16,7 +16,7 @@ Each package contains:
 - The command-line tool, for example `pdfcraft-cli`.
 - The desktop entry, the MIME type and the icons.
 
-PdfCraft, WordCraft and DeckCraft embed the craft-fonts set at the commit that the upstream release uses.
+All four apps embed the craft-fonts set at the commit that the upstream release uses.
 PdfCraft also contains the OCR models for Scan & OCR.
 
 ## Try it

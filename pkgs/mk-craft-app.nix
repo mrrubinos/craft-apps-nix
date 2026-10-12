@@ -11,6 +11,7 @@
   libxcursor,
   libxi,
   libxrandr,
+  dbus,
 }:
 
 {
@@ -36,6 +37,7 @@ let
     libxcursor
     libxi
     libxrandr
+    dbus
   ];
 in
 rustPlatform.buildRustPackage {

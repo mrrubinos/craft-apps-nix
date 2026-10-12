@@ -6,9 +6,9 @@ The flake builds each app from source for `x86_64-linux` and `aarch64-linux`.
 | Package | Version | App |
 |---|---|---|
 | `pdfcraft` | 0.7.1 | [PdfCraft](https://github.com/storytold/pdfcraft), a PDF workbench |
-| `wordcraft` | 0.5.0 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
-| `gridcraft` | 0.5.0 | [GridCraft](https://github.com/storytold/gridcraft), workbooks and charts |
-| `deckcraft` | 0.5.0 | [DeckCraft](https://github.com/storytold/deckcraft), slide decks |
+| `wordcraft` | 0.6.1 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
+| `gridcraft` | 0.6.1 | [GridCraft](https://github.com/storytold/gridcraft), workbooks and charts |
+| `deckcraft` | 0.6.1 | [DeckCraft](https://github.com/storytold/deckcraft), slide decks |
 
 Each package contains:
 

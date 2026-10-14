@@ -22,6 +22,7 @@
   description,
   craftFonts ? null,
   buildInputs ? [ ],
+  buildFeatures ? [ ],
   postInstall ? "",
 }:
 
@@ -41,7 +42,12 @@ let
   ];
 in
 rustPlatform.buildRustPackage {
-  inherit pname version cargoHash;
+  inherit
+    pname
+    version
+    cargoHash
+    buildFeatures
+    ;
 
   src = fetchFromGitHub {
     owner = "storytold";

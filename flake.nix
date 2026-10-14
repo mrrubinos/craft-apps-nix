@@ -1,5 +1,5 @@
 {
-  description = "PdfCraft, WordCraft, GridCraft and DeckCraft from storytold, built from source";
+  description = "The Craft apps from storytold, built from source";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -33,6 +33,15 @@
           wordcraft = pkgs.callPackage ./pkgs/wordcraft.nix { inherit mkCraftApp; };
           gridcraft = pkgs.callPackage ./pkgs/gridcraft.nix { inherit mkCraftApp; };
           deckcraft = pkgs.callPackage ./pkgs/deckcraft.nix { inherit mkCraftApp; };
+          cadcraft = pkgs.callPackage ./pkgs/cadcraft.nix { inherit mkCraftApp; };
+          designcraft = pkgs.callPackage ./pkgs/designcraft.nix { inherit mkCraftApp; };
+          effectcraft = pkgs.callPackage ./pkgs/effectcraft.nix { inherit mkCraftApp; };
+          figcraft = pkgs.callPackage ./pkgs/figcraft.nix { inherit mkCraftApp; };
+          filmcraft = pkgs.callPackage ./pkgs/filmcraft.nix { inherit mkCraftApp; };
+          lightcraft = pkgs.callPackage ./pkgs/lightcraft.nix { inherit mkCraftApp; };
+          photocraft = pkgs.callPackage ./pkgs/photocraft.nix { inherit mkCraftApp; };
+          soundcraft = pkgs.callPackage ./pkgs/soundcraft.nix { inherit mkCraftApp; };
+          vectorcraft = pkgs.callPackage ./pkgs/vectorcraft.nix { inherit mkCraftApp; };
         };
     in
     {

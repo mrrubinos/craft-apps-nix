@@ -32,7 +32,7 @@ LightCraft and PhotoCraft open HEIC photos.
 ## Try it
 
 ```sh
-nix run github:mrrubinos/pdfcraft-nix#pdfcraft
+nix run github:mrrubinos/craft-apps-nix#pdfcraft
 ```
 
 ## Use it in a NixOS configuration
@@ -41,7 +41,7 @@ Add the input to `flake.nix`:
 
 ```nix
 inputs.craft-apps = {
-  url = "github:mrrubinos/pdfcraft-nix";
+  url = "github:mrrubinos/craft-apps-nix";
   inputs.nixpkgs.follows = "nixpkgs";
 };
 ```

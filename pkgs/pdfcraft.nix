@@ -19,9 +19,9 @@ let
 in
 mkCraftApp {
   pname = "pdfcraft";
-  version = "0.9.0";
-  hash = "sha256-pOHCv3K6XfRci1kWhta1gmTZGklSpBJqjLIXvqKq484=";
-  cargoHash = "sha256-4zRin04PC+QAeV41qcXHouOXNbwIGYZ/IfXhGKa9Zp8=";
+  version = "0.10.1";
+  hash = "sha256-IiULdpKgeFUxVvpJVDmddJBqlmsmBIDfJejdFSMi38A=";
+  cargoHash = "sha256-3TT8sWPLL2ib7MZ5QlM5sc6m3iXXL4CcAx8hHNzv7Rg=";
   description = "PDF workbench: read, organize, combine, split and secure PDFs";
 
   craftFonts = fetchFromGitHub {

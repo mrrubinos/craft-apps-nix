@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "effectcraft";
-  version = "0.11.1";
-  hash = "sha256-Tck0XVne5B5mdnRzN50zrG/gCa5tE56TOyFi9ieSPEE=";
-  cargoHash = "sha256-wyRErJzqvXFAl3RLQREUSkLCqWMUVDHszI8jAjBqfpI=";
+  version = "0.13.0";
+  hash = "sha256-2T7TwROOP1uB8pbDCws07TRwKIjIJ455E6z4oL9xB4s=";
+  cargoHash = "sha256-oMVEic27sZaqwcPrkuaLlzDOklnaBOW25RyeAFEpNKU=";
   description = "Motion graphics and visual effects compositor";
 
   buildInputs = [ alsa-lib ];

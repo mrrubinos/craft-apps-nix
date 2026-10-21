@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "wordcraft";
-  version = "0.8.0";
-  hash = "sha256-5zT+XjveKuuqaSsJnKZjerai0TaBO6s7LhrWKrvNcSU=";
-  cargoHash = "sha256-Dvjl82GeD/lxrRMCOQJm8pxbVctSeMiRhtmUWpDjziE=";
+  version = "0.9.0";
+  hash = "sha256-ukGYTGTdrKUzr5IbSbnnWo7wlX7fkQj16RU4K+L7hWg=";
+  cargoHash = "sha256-visMvngFM1zHJnLMUVGb5KZRv5LYu95YOWxDVqd80qQ=";
   description = "Write and design documents; open and save Word files";
 
   craftFonts = fetchFromGitHub {

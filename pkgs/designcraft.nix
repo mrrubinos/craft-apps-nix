@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "designcraft";
-  version = "0.9.0";
-  hash = "sha256-IL5kXdkFG1CiIuh3dWTphFu5EPHeSrg2eQ8N9dFNqkQ=";
-  cargoHash = "sha256-pt/8PkH2c9IKFRgNIKkEUyUMca/glpEoo5CjgM3VVyU=";
+  version = "0.10.0";
+  hash = "sha256-wLPZ3hLR1phqRWwGj6FDuCis5F0QCKpTpusMOj+vKcA=";
+  cargoHash = "sha256-5QLWzsYsXE+uN/GKb8ymzbz/r3rY+cy4sjJ9FLKypEQ=";
   description = "Lay out magazines, books and print documents";
 
   craftFonts = fetchFromGitHub {

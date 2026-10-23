@@ -6,9 +6,9 @@
 
 mkCraftApp {
   pname = "deckcraft";
-  version = "0.9.0";
-  hash = "sha256-ZXAZi6qikZ7jcSdvpGswvZNIm2a5Ek5V2hNI2YXfnrw=";
-  cargoHash = "sha256-T3roS5vcmcnCXt8w3oKPXLZVkY9b2xEKjvt8ndYiK9Y=";
+  version = "0.10.0";
+  hash = "sha256-q18YQXHmkPaULSMPxu5vY9/F7JThejIhKwpHhme0UCI=";
+  cargoHash = "sha256-iHkyrHz2VMx0+bpYnve5EtBiuH32VSYHRSvg+ihIdwU=";
   description = "Create and present slide decks";
 
   craftFonts = fetchFromGitHub {

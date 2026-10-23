@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "gridcraft";
-  version = "0.10.0";
-  hash = "sha256-1zcOZEv/5jfPp5r0DuZ/aZZHSZ2S+kd8HFbEGi48ChU=";
-  cargoHash = "sha256-TlqxVwfnYtG/3uY/ke8x/dFIc9foSldklypX4ZwtM0M=";
+  version = "0.11.1";
+  hash = "sha256-ZhaRTAPX+bnifFTgU7Pv5wFaJHmffXI0a0vAyF4A0cs=";
+  cargoHash = "sha256-eQMyzLQGDw444ZPpw01jbJkoWXWlWfGvWoQCd9mYr50=";
   description = "Calculate, analyse and chart data in workbooks";
 
   craftFonts = fetchFromGitHub {

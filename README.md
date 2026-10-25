@@ -14,7 +14,7 @@ The flake builds each app from source for `x86_64-linux` and `aarch64-linux`.
 | `gridcraft` | 0.11.1 | [GridCraft](https://github.com/storytold/gridcraft), workbooks and charts |
 | `lightcraft` | 0.13.0 | [LightCraft](https://github.com/storytold/lightcraft), photo library and raw development |
 | `pdfcraft` | 0.13.0 | [PdfCraft](https://github.com/storytold/pdfcraft), a PDF workbench |
-| `photocraft` | 0.14.0 | [PhotoCraft](https://github.com/storytold/photocraft), photos and layered PSD files |
+| `photocraft` | 0.15.1 | [PhotoCraft](https://github.com/storytold/photocraft), photos and layered PSD files |
 | `soundcraft` | 0.12.1 | [SoundCraft](https://github.com/storytold/soundcraft), audio and MIDI recording and mixing |
 | `vectorcraft` | 0.16.0 | [VectorCraft](https://github.com/storytold/vectorcraft), vector illustration |
 | `wordcraft` | 0.10.0 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |

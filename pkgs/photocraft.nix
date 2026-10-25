@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "photocraft";
-  version = "0.14.0";
-  hash = "sha256-dkaJAJAcB433EDRiteDoxfvK17st37YP/tmlzQhi0UE=";
-  cargoHash = "sha256-I0b+ZDqsi2fucOlIbu3UpVAFV4hvIJyUoWFx28SYiC8=";
+  version = "0.15.1";
+  hash = "sha256-VEUY4Woazx5WZgCODYMWI+8CyF4w1rHp1vI9CY+bgdw=";
+  cargoHash = "sha256-KXur3Ki4LGCmxXgHmUy7uLKT2X7LiMFdRnVJTolBAPk=";
   description = "Edit photos and layered PSD documents";
 
   craftFonts = fetchFromGitHub {

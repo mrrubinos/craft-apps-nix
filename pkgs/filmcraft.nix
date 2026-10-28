@@ -6,16 +6,16 @@
 
 mkCraftApp {
   pname = "filmcraft";
-  version = "0.12.0";
-  hash = "sha256-NY6PABV6Jsg6Rahl3uSM8+qW61yAcAEhWzCDH+wDUMo=";
-  cargoHash = "sha256-FWCOqH4tMJJjLUJc0z+F++PObsbAvDIzgdGt8rMUZSc=";
+  version = "0.13.0";
+  hash = "sha256-mEMNK+uizVpO0szEonWxkK3M6MpGV5s0Blzt9Y5VdAg=";
+  cargoHash = "sha256-Ad4aHiGj7dbABxXUIQ9yHnW6q4xuOWnRvm3KC0lu230=";
   description = "Edit video, color and sound";
 
   craftFonts = fetchFromGitHub {
     owner = "storytold";
     repo = "craft-fonts";
-    rev = "abb83316d96aa59c1cf64784289e378fe9fa5695";
-    hash = "sha256-e+6HpOYoAFTh6mNfGBBw2njnBzcE8W8+Jybv1+dKOCA=";
+    rev = "bfcbf714e45a3ea8e98f88ab2b7971372a576414";
+    hash = "sha256-OWegmkrjwP6YP8NoV4i8V+GH2lKMS1XqDe24zFOc4yw=";
   };
 
   buildInputs = [ alsa-lib ];

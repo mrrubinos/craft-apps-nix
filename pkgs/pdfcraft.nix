@@ -6,16 +6,25 @@
 }:
 
 let
-  ocrModels = {
-    "text-detection.rten" = fetchurl {
-      url = "https://ocrs-models.s3-accelerate.amazonaws.com/text-detection.rten";
-      hash = "sha256-8Vz7Vr0CxL9HiiA0OYZQSh8B4WZcKzoK1mNA8FSxtco=";
-    };
-    "text-recognition.rten" = fetchurl {
-      url = "https://ocrs-models.s3-accelerate.amazonaws.com/text-recognition.rten";
-      hash = "sha256-5ISGbUzOQDF1vY0AsSj+sIq0LiCN4w5CzZiJ2PFzWm4=";
-    };
-  };
+  # The ocrs-models S3 bucket returns 403, the v0.14.0 release tarball ships the same model files.
+  modelsRelease = "pdfcraft-0.14.0-linux-x86_64";
+  ocrModels =
+    lib.mapAttrs
+      (
+        name: hash:
+        fetchurl {
+          inherit name hash;
+          url = "https://github.com/storytold/pdfcraft/releases/download/v0.14.0/${modelsRelease}.tar.gz";
+          downloadToTemp = true;
+          postFetch = ''
+            tar -xzOf "$downloadedFile" ${modelsRelease}/share/pdfcraft/models/${name} > "$out"
+          '';
+        }
+      )
+      {
+        "text-detection.rten" = "sha256-8Vz7Vr0CxL9HiiA0OYZQSh8B4WZcKzoK1mNA8FSxtco=";
+        "text-recognition.rten" = "sha256-5ISGbUzOQDF1vY0AsSj+sIq0LiCN4w5CzZiJ2PFzWm4=";
+      };
 in
 mkCraftApp {
   pname = "pdfcraft";

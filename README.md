@@ -17,7 +17,7 @@ The flake builds each app from source for `x86_64-linux` and `aarch64-linux`.
 | `photocraft` | 0.16.0 | [PhotoCraft](https://github.com/storytold/photocraft), photos and layered PSD files |
 | `soundcraft` | 0.13.1 | [SoundCraft](https://github.com/storytold/soundcraft), audio and MIDI recording and mixing |
 | `vectorcraft` | 0.17.0 | [VectorCraft](https://github.com/storytold/vectorcraft), vector illustration |
-| `wordcraft` | 0.10.0 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
+| `wordcraft` | 0.11.0 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
 
 Each package contains:
 

@@ -5,15 +5,15 @@
 
 mkCraftApp {
   pname = "cadcraft";
-  version = "0.13.0";
-  hash = "sha256-lS9E30whUfGNq82jpgmJB5q3W81zZQNmqg0TcM1ul1M=";
-  cargoHash = "sha256-BE34VV7+IwbpLvEMO61ombOGdcytlq2B7BJPWGjpdvA=";
+  version = "0.17.0";
+  hash = "sha256-Yf5bRRsvQbHdqBMScBb7qmsm18c8DSqvMx48Ab2Lli0=";
+  cargoHash = "sha256-n7BLuz7ensk1ro4tNW1J6wqbyOPxvqeHgYftlAaDSHo=";
   description = "Draft, dimension and plot 2D drawings";
 
   craftFonts = fetchFromGitHub {
     owner = "storytold";
     repo = "craft-fonts";
-    rev = "3d9ab3a132ed0eff457e424226a435a901da30d3";
-    hash = "sha256-mNnDzBcOp1X10dzmiW0iBAkb74QjuzMO4slWudxXCTE=";
+    rev = "b076417b5880bd4154bd22f00695b1d28c6bea83";
+    hash = "sha256-jZ3VBAJDofB6RvsS7GGV5lLT4xiShIjpz5XHBCD2oUc=";
   };
 }

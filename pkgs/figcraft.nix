@@ -5,15 +5,15 @@
 
 mkCraftApp {
   pname = "figcraft";
-  version = "0.11.2";
-  hash = "sha256-m/esZA+zHBEEsJxtorMF00NhlCkrFj7p6sFWOJt4JAY=";
-  cargoHash = "sha256-EB/qkhEhZil1YxItkg+OAWl9KxXAD7W5y1+dxRKuUG4=";
+  version = "0.15.0";
+  hash = "sha256-E3DdHHgJVdebbXqibZcrhytT0aDUUc+a+kpTUZocBK0=";
+  cargoHash = "sha256-c33mZKKmttDf9jIhmm43bRguGnwQyXhhjg+tC1Ibk4o=";
   description = "Design and prototype user interfaces";
 
   craftFonts = fetchFromGitHub {
     owner = "storytold";
     repo = "craft-fonts";
-    rev = "43913056ce82a3fdad0ef69f6b88d1dc922a8104";
-    hash = "sha256-u1fC5spekizPXnrK6uiKEZSr2SJOaBF4ffLDbKkywEY=";
+    rev = "37827adc41fd165f9a9234ac40f94dbad353aa69";
+    hash = "sha256-BfFMLP2LLrKS246gGpj26ECVRa5/Ggzkesf0OBrfGu8=";
   };
 }

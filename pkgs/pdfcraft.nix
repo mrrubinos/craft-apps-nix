@@ -28,16 +28,16 @@ let
 in
 mkCraftApp {
   pname = "pdfcraft";
-  version = "0.14.0";
-  hash = "sha256-UCTQr6j4TqPXQWH410cF6DZC0vK59QFv1FAWzxdDjwA=";
-  cargoHash = "sha256-L0fC96fLlwTq0Gu0CSL9swKzZe4lcgLFsMsaIk3CxuY=";
+  version = "0.18.0";
+  hash = "sha256-agLr61nG0/s786ZYj2AS2uw8hhH7a20TcCEjedHyygk=";
+  cargoHash = "sha256-fE6KX6KMyc22kdiJiqJLnCnVXTxHNWlhtEf/0vqCf88=";
   description = "PDF workbench: read, organize, combine, split and secure PDFs";
 
   craftFonts = fetchFromGitHub {
     owner = "storytold";
     repo = "craft-fonts";
-    rev = "3d9ab3a132ed0eff457e424226a435a901da30d3";
-    hash = "sha256-mNnDzBcOp1X10dzmiW0iBAkb74QjuzMO4slWudxXCTE=";
+    rev = "b076417b5880bd4154bd22f00695b1d28c6bea83";
+    hash = "sha256-jZ3VBAJDofB6RvsS7GGV5lLT4xiShIjpz5XHBCD2oUc=";
   };
 
   postInstall = lib.concatStrings (

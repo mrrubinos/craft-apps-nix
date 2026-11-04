@@ -13,11 +13,11 @@ The flake builds each app from source for `x86_64-linux` and `aarch64-linux`.
 | `filmcraft` | 0.17.0 | [FilmCraft](https://github.com/storytold/filmcraft), video editing |
 | `gridcraft` | 0.16.0 | [GridCraft](https://github.com/storytold/gridcraft), workbooks and charts |
 | `lightcraft` | 0.18.0 | [LightCraft](https://github.com/storytold/lightcraft), photo library and raw development |
-| `pdfcraft` | 0.18.0 | [PdfCraft](https://github.com/storytold/pdfcraft), a PDF workbench |
+| `pdfcraft` | 0.18.1 | [PdfCraft](https://github.com/storytold/pdfcraft), a PDF workbench |
 | `photocraft` | 0.20.1 | [PhotoCraft](https://github.com/storytold/photocraft), photos and layered PSD files |
 | `soundcraft` | 0.17.0 | [SoundCraft](https://github.com/storytold/soundcraft), audio and MIDI recording and mixing |
 | `vectorcraft` | 0.21.0 | [VectorCraft](https://github.com/storytold/vectorcraft), vector illustration |
-| `wordcraft` | 0.15.0 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
+| `wordcraft` | 0.15.1 | [WordCraft](https://github.com/storytold/wordcraft), documents and Word files |
 
 Each package contains:
 

@@ -6,9 +6,9 @@
 
 mkCraftApp {
   pname = "filmcraft";
-  version = "0.17.0";
-  hash = "sha256-8qy6HZu96wBUhpyN3w87hxnPgOZ06MmzHkzT1i5ru0k=";
-  cargoHash = "sha256-+2eP9yDJ8fOdO/yvGMClZ6pn5rmc1rM57WofacvDR0s=";
+  version = "0.17.1";
+  hash = "sha256-wNndq73/p3cl3AZKPp4PUsUSyzSnyqywA5NgnhHVrfk=";
+  cargoHash = "sha256-MTS7vSCFRwFRVfF3bOH8KH3GGJW5SOCxhTidu6cCbN0=";
   description = "Edit video, color and sound";
 
   craftFonts = fetchFromGitHub {

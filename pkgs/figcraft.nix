@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "figcraft";
-  version = "0.15.0";
-  hash = "sha256-E3DdHHgJVdebbXqibZcrhytT0aDUUc+a+kpTUZocBK0=";
-  cargoHash = "sha256-c33mZKKmttDf9jIhmm43bRguGnwQyXhhjg+tC1Ibk4o=";
+  version = "0.15.1";
+  hash = "sha256-nkDYjqEixE1zRJj/AiqVNIHQC5XnzqTf5hZREBX1UFc=";
+  cargoHash = "sha256-JJiPU/L2My3aGpw00NlGwmSg4CHTpr4QiA0XvbdK0Ps=";
   description = "Design and prototype user interfaces";
 
   craftFonts = fetchFromGitHub {

@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "cadcraft";
-  version = "0.17.1";
-  hash = "sha256-qRzZk4M5hk+zTDq9IK9zy4aoK+hkeomVkS1BNfFqtW8=";
-  cargoHash = "sha256-kilaA8T5ZFEn5+6Eh/8VGM4Z+WTt18u6B4zXepa7L3U=";
+  version = "0.18.0";
+  hash = "sha256-QpH2p69+XL2EVF633X41LeiDZN/uJ22cHh1lP25use8=";
+  cargoHash = "sha256-WVRERkYps/v1SQTYVBrHrk1rRzBGDBnMPUl6lUjBjOs=";
   description = "Draft, dimension and plot 2D drawings";
 
   craftFonts = fetchFromGitHub {

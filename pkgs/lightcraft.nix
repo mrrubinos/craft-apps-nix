@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "lightcraft";
-  version = "0.18.1";
-  hash = "sha256-9IKyMMEAE531WyPtH0Wn+yc3nDaiy3p9VPevF+19TJo=";
-  cargoHash = "sha256-E6dCnVlX7qYu8ygK4HrAHIaDE7eOfgUUvfaTkf+9MFE=";
+  version = "0.19.0";
+  hash = "sha256-UQaORLCbEZGgfPXZ/ZtI+KvFRFw+lHHgV/ey8mDqnQ8=";
+  cargoHash = "sha256-QRYnnaffvzVa82QH6ucBfTWW9tyc8PBD2cQCaplw0MA=";
   description = "Organise photos and develop raw files, non-destructively";
 
   craftFonts = fetchFromGitHub {

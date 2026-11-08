@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage {
             cp -r --no-preserve=mode "$vendorStaging/git" staging/git
             find staging/git -name Cargo.toml -exec sed -i -E 's/(workspace = true), default-features = false/\1/' {} +
           fi
-          fetch-cargo-vendor-util create-vendor staging "$out"
+          fetch-cargo-vendor-util create-vendor "$PWD/staging" "$out"
         '';
       };
 

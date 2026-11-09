@@ -3,6 +3,7 @@
   mkCraftApp,
   fetchFromGitHub,
   fetchurl,
+  aws-lc,
 }:
 
 let
@@ -39,6 +40,9 @@ mkCraftApp {
     rev = "b076417b5880bd4154bd22f00695b1d28c6bea83";
     hash = "sha256-jZ3VBAJDofB6RvsS7GGV5lLT4xiShIjpz5XHBCD2oUc=";
   };
+
+  # cargoSetupHook sets AWS_LC_SYS_USE_SYSTEM, so aws-lc-sys needs this input. Delete when the hook drops the variable or Cargo.lock drops the crate.
+  buildInputs = [ aws-lc ];
 
   postInstall = lib.concatStrings (
     lib.mapAttrsToList (name: file: ''

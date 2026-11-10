@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "soundcraft";
-  version = "0.18.0";
-  hash = "sha256-KxTP6R6jrGVX9SkMEepccThk3FKIhn+V7e01kXLIIZQ=";
-  cargoHash = "sha256-ExKqLiUi8EeqJyvftaNwpdx/oYuQ/nnVqefXBC9jVCM=";
+  version = "0.19.0";
+  hash = "sha256-alBwO6cTtBHjLZmcR+qu/7Mtx+cn5NHvN+kHhnT5nTM=";
+  cargoHash = "sha256-kOa0ew31v5F6a/gyaHXWYjVKvMhJ87oD2TrXvysVZGY=";
   description = "Record, edit and mix audio and MIDI";
 
   buildInputs = [ alsa-lib ];

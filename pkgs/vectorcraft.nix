@@ -5,9 +5,9 @@
 
 mkCraftApp {
   pname = "vectorcraft";
-  version = "0.23.0";
-  hash = "sha256-JDUneS7md/q2ZLKqSuKILuIHGUOXyDuuWoGgDQyW510=";
-  cargoHash = "sha256-tDdES5pjOLASkVDeIxcM4voURybuDpFfwTvBPmrhCCo=";
+  version = "0.24.0";
+  hash = "sha256-FRby9AAQyG3N6irSeGaASE/2Yz6t3umA+Pjy+p2d0sc=";
+  cargoHash = "sha256-4FBO4PrCChpdG/HuVaJmRV532cossFzfa3dWMFhmQqk=";
   description = "Draw and edit vector illustrations, SVG and PDF";
 
   craftFonts = fetchFromGitHub {
